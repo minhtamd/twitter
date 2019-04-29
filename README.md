@@ -21,7 +21,7 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of required functionalities:
 
 <img src='http://g.recordit.co/axvaln4WRR.gif' title='Required Functionality' width='' alt='Video Walkthrough' />
 
