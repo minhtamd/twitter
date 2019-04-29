@@ -1,6 +1,6 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *Twitter*
 
-**Name of your app** is a basic twitter app to read your tweets.
+Twitter is a basic twitter app to read your tweets.
 
 Time spent: **X** hours spent in total
 
@@ -8,7 +8,7 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] User sees app icon in home screen and styled launch screen. (1pt)
+- [x] User sees app icon in home screen and styled launch screen. (1pt)
 - [ ] User can log in. (1pt)
 - [ ] User can log out. (1pt)
 - [ ] User stays logged in across restarts. (1pt)
