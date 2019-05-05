@@ -31,7 +31,7 @@ class HomeTableViewController: UITableViewController {
     
     @objc func loadTweets(){
         numberOfTweets = 20
-        let homeUrl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
+        let homeUrl = Api.homeTimeline.rawValue
         let apiParam = ["count": numberOfTweets]
         TwitterAPICaller.client?.getDictionariesRequest(url: homeUrl, parameters: apiParam, success: { (tweets: [NSDictionary]) in
             self.tweetArray.removeAll()
@@ -46,7 +46,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     func loadMoreTweets(){
-        let homeUrl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
+        let homeUrl = Api.homeTimeline.rawValue
         numberOfTweets = numberOfTweets + 15
         let apiParam = ["count": numberOfTweets]
         
@@ -68,7 +68,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.tweetCell.rawValue, for: indexPath) as! TweetCell
         
         let tweet = tweetArray[indexPath.row]
         let user = tweet["user"] as! NSDictionary
@@ -88,7 +88,7 @@ class HomeTableViewController: UITableViewController {
     
     @IBAction func onLogout(_ sender: Any) {
         TwitterAPICaller.client?.logout()
-        UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        UserDefaults.standard.set(false, forKey: Key.userLoggedIn.rawValue)
         self.dismiss(animated: true, completion: nil)
     }
     // MARK: - Table view data source

@@ -61,41 +61,41 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-w4-i2d">
-                                            <rect key="frame" x="20" y="15" width="40" height="40"/>
+                                            <rect key="frame" x="8" y="8" width="40" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="40S-SC-Xfi"/>
                                                 <constraint firstAttribute="width" constant="40" id="8KU-VD-0RR"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="De9-IQ-1rC">
-                                            <rect key="frame" x="68" y="15" width="50.5" height="21.5"/>
+                                            <rect key="frame" x="56" y="8" width="50.5" height="21.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="screenname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9e-LZ-EnQ">
-                                            <rect key="frame" x="126.5" y="17" width="89" height="19.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i41-9u-Z2u">
-                                            <rect key="frame" x="68" y="44.5" width="36" height="17"/>
+                                            <rect key="frame" x="56" y="33.5" width="36" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="screenname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9e-LZ-EnQ">
+                                            <rect key="frame" x="112.5" y="10" width="89" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Nyt-w4-i2d" firstAttribute="leading" secondItem="dXQ-Eb-wep" secondAttribute="leadingMargin" constant="4" id="405-kQ-YF2"/>
-                                        <constraint firstItem="De9-IQ-1rC" firstAttribute="top" secondItem="dXQ-Eb-wep" secondAttribute="topMargin" constant="4" id="G4B-vp-JxX"/>
+                                        <constraint firstItem="w9e-LZ-EnQ" firstAttribute="firstBaseline" secondItem="De9-IQ-1rC" secondAttribute="firstBaseline" id="8Bo-Gz-8yP"/>
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="i41-9u-Z2u" secondAttribute="bottom" constant="8" id="L05-UU-E57"/>
-                                        <constraint firstItem="w9e-LZ-EnQ" firstAttribute="firstBaseline" secondItem="De9-IQ-1rC" secondAttribute="firstBaseline" id="UHm-Lq-DiP"/>
+                                        <constraint firstItem="Nyt-w4-i2d" firstAttribute="leading" secondItem="dXQ-Eb-wep" secondAttribute="leading" constant="8" id="MZG-3x-kRY"/>
                                         <constraint firstItem="i41-9u-Z2u" firstAttribute="leading" secondItem="Nyt-w4-i2d" secondAttribute="trailing" constant="8" id="VUG-Pf-bf3"/>
                                         <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="i41-9u-Z2u" secondAttribute="trailing" constant="8" id="Y1I-4c-eBW"/>
-                                        <constraint firstItem="Nyt-w4-i2d" firstAttribute="top" secondItem="dXQ-Eb-wep" secondAttribute="topMargin" constant="4" id="bUW-wG-Sr6"/>
-                                        <constraint firstItem="i41-9u-Z2u" firstAttribute="top" secondItem="De9-IQ-1rC" secondAttribute="bottom" constant="8" id="f1m-fY-dqz"/>
-                                        <constraint firstItem="w9e-LZ-EnQ" firstAttribute="leading" secondItem="De9-IQ-1rC" secondAttribute="trailing" constant="8" id="jRw-F8-4By"/>
+                                        <constraint firstItem="Nyt-w4-i2d" firstAttribute="top" secondItem="dXQ-Eb-wep" secondAttribute="top" constant="8" id="cpu-MQ-5aq"/>
+                                        <constraint firstItem="i41-9u-Z2u" firstAttribute="top" secondItem="De9-IQ-1rC" secondAttribute="bottom" constant="4" id="f1m-fY-dqz"/>
+                                        <constraint firstItem="De9-IQ-1rC" firstAttribute="top" secondItem="dXQ-Eb-wep" secondAttribute="top" constant="8" id="fx9-7a-Eln"/>
+                                        <constraint firstItem="w9e-LZ-EnQ" firstAttribute="leading" secondItem="De9-IQ-1rC" secondAttribute="trailing" constant="6" id="jRw-F8-4By"/>
                                         <constraint firstItem="De9-IQ-1rC" firstAttribute="leading" secondItem="Nyt-w4-i2d" secondAttribute="trailing" constant="8" id="p88-qW-Pqe"/>
                                     </constraints>
                                 </tableViewCellContentView>
