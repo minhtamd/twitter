@@ -59,6 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				6EBCF52421DF07FC00451C03 /* Twitter */,
+				6EBCF52521DF07FC00451C03 /* AppDelegate.swift */,
+				6EBCF53121DF07FE00451C03 /* Info.plist */,
+				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
+				37D29B8521F90E3400984A88 /* Assets.xcassets */,
 				6EBCF52321DF07FC00451C03 /* Products */,
 				6BFB9ED923EC02A96AB79DEE /* Pods */,
 				BE4E6AE53EB27114CB452298 /* Frameworks */,
@@ -76,15 +80,10 @@
 		6EBCF52421DF07FC00451C03 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */,
-				6EBCF52921DF07FC00451C03 /* Main.storyboard */,
-				ED080F812276BF3B00013A13 /* TweetCell.swift */,
-				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
-				6EBCF52521DF07FC00451C03 /* AppDelegate.swift */,
-				37D29B8521F90E3400984A88 /* Assets.xcassets */,
-				6EBCF53121DF07FE00451C03 /* Info.plist */,
-				ED080F7D2276ACDE00013A13 /* LoginViewController.swift */,
-				ED080F7F2276B2E300013A13 /* HomeTableViewController.swift */,
+				ED0D14CC227FA74500DF4E40 /* ViewControllers */,
+				ED0D14CA227FA72900DF4E40 /* Cells */,
+				ED0D14C9227FA6F800DF4E40 /* Storyboards */,
+				ED0D14C8227FA6DC00DF4E40 /* Enums */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -95,6 +94,39 @@
 				872C2D82F41D5A5D2A920E9E /* Pods_Twitter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED0D14C8227FA6DC00DF4E40 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		ED0D14C9227FA6F800DF4E40 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */,
+				6EBCF52921DF07FC00451C03 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED0D14CA227FA72900DF4E40 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED080F812276BF3B00013A13 /* TweetCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED0D14CC227FA74500DF4E40 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED080F7D2276ACDE00013A13 /* LoginViewController.swift */,
+				ED080F7F2276B2E300013A13 /* HomeTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
