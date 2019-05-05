@@ -59,10 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				6EBCF52421DF07FC00451C03 /* Twitter */,
-				6EBCF52521DF07FC00451C03 /* AppDelegate.swift */,
-				6EBCF53121DF07FE00451C03 /* Info.plist */,
-				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
-				37D29B8521F90E3400984A88 /* Assets.xcassets */,
 				6EBCF52321DF07FC00451C03 /* Products */,
 				6BFB9ED923EC02A96AB79DEE /* Pods */,
 				BE4E6AE53EB27114CB452298 /* Frameworks */,
@@ -80,6 +76,10 @@
 		6EBCF52421DF07FC00451C03 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				6EBCF52521DF07FC00451C03 /* AppDelegate.swift */,
+				6EBCF53121DF07FE00451C03 /* Info.plist */,
+				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
+				37D29B8521F90E3400984A88 /* Assets.xcassets */,
 				ED0D14CC227FA74500DF4E40 /* ViewControllers */,
 				ED0D14CA227FA72900DF4E40 /* Cells */,
 				ED0D14C9227FA6F800DF4E40 /* Storyboards */,
