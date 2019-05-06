@@ -73,4 +73,39 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
         })
     }
     
+    func favoriteTweet(tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> () ){
+        let url = Api.favorite.rawValue
+        TwitterAPICaller.client?.post(url, parameters: ["id":tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+        })
+    }
+    
+    func unFavoriteTweet(tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> () ){
+        let url = Api.unFavorite.rawValue
+        TwitterAPICaller.client?.post(url, parameters: ["id":tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+        })
+    }
+    
+    func retweet(tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> () ){
+        let url = Api.retweet.rawValue + "\(tweetId).json"
+        TwitterAPICaller.client?.post(url, parameters: ["id":tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+        })
+    }
+    
+    func unRetweet(tweetId: Int, success: @escaping () -> (), failure: @escaping (Error) -> () ){
+        let url = Api.unRetweet.rawValue + "\(tweetId).json"
+        TwitterAPICaller.client?.post(url, parameters: ["id":tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            failure(error)
+        })
+    }
 }

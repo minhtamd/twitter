@@ -74,19 +74,26 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.tweetCell.rawValue, for: indexPath) as! TweetCell
-        
+    
         let tweet = tweetArray[indexPath.row]
         let user = tweet["user"] as! NSDictionary
+        
+        // display texts
         cell.userNameLabel.text = user["name"] as? String
         cell.screenNameLabel.text = "@"+(user["screen_name"] as! String)
         cell.tweetContent.text = tweet["text"] as? String
         
+        // display profile image
         let imageURL = URL(string: ((user["profile_image_url_https"] as! String)))
         let data = try? Data(contentsOf: imageURL!)
-        
         if let imageData = data {
             cell.profileImageView.image = UIImage(data: imageData)
         }
+        
+        // set favorite and retween buttons
+        cell.tweetId = tweet["id"] as! Int
+        cell.setFavorite(tweet["favorited"] as! Bool)
+        cell.setRetweet(tweet["retweeted"] as! Bool)
         
         return cell
     }
