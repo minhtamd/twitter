@@ -10,9 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginBox: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loginBox.layer.cornerRadius = 20
+        loginBox.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     

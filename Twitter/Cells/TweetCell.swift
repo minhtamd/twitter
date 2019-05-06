@@ -16,6 +16,8 @@ class TweetCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        profileImageView.layer.cornerRadius = 8
+        profileImageView.layer.masksToBounds = true
         // Initialization code
     }
 

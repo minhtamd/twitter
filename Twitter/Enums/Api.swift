@@ -10,4 +10,5 @@ import Foundation
 
 enum Api: String{
     case homeTimeline = "https://api.twitter.com/1.1/statuses/home_timeline.json"
+    case postTweet = "https://api.twitter.com/1.1/statuses/update.json"
 }

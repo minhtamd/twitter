@@ -19,6 +19,8 @@
 		ED0D14CF227FA95C00DF4E40 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D14CE227FA95C00DF4E40 /* Key.swift */; };
 		ED0D14D1227FA9D400DF4E40 /* Indentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D14D0227FA9D400DF4E40 /* Indentifier.swift */; };
 		ED0D14D3227FAA5100DF4E40 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D14D2227FAA5100DF4E40 /* Api.swift */; };
+		ED0D14D5227FAF4000DF4E40 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D14D4227FAF4000DF4E40 /* TweetViewController.swift */; };
+		ED0D14D7227FB6B500DF4E40 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D14D6227FB6B500DF4E40 /* AccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		ED0D14CE227FA95C00DF4E40 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		ED0D14D0227FA9D400DF4E40 /* Indentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indentifier.swift; sourceTree = "<group>"; };
 		ED0D14D2227FAA5100DF4E40 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		ED0D14D4227FAF4000DF4E40 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
+		ED0D14D6227FB6B500DF4E40 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			children = (
 				ED080F7D2276ACDE00013A13 /* LoginViewController.swift */,
 				ED080F7F2276B2E300013A13 /* HomeTableViewController.swift */,
+				ED0D14D4227FAF4000DF4E40 /* TweetViewController.swift */,
+				ED0D14D6227FB6B500DF4E40 /* AccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -266,9 +272,11 @@
 			files = (
 				ED080F802276B2E300013A13 /* HomeTableViewController.swift in Sources */,
 				ED080F7E2276ACDE00013A13 /* LoginViewController.swift in Sources */,
+				ED0D14D5227FAF4000DF4E40 /* TweetViewController.swift in Sources */,
 				ED080F822276BF3B00013A13 /* TweetCell.swift in Sources */,
 				ED0D14D1227FA9D400DF4E40 /* Indentifier.swift in Sources */,
 				6EBCF54421E047A500451C03 /* TwitterAPICaller.swift in Sources */,
+				ED0D14D7227FB6B500DF4E40 /* AccountViewController.swift in Sources */,
 				6EBCF52621DF07FC00451C03 /* AppDelegate.swift in Sources */,
 				ED0D14D3227FAA5100DF4E40 /* Api.swift in Sources */,
 				ED0D14CF227FA95C00DF4E40 /* Key.swift in Sources */,
